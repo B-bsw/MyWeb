@@ -66,7 +66,7 @@ html,body,div,h1,p,header {
 }
 #img_fan{
     border-radius: 10px;
-    width: 150px;
+    width: 150px; /*check*/
     height: 266.66px;
     /* float: right; */
     /* opacity: 0; */
