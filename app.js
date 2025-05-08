@@ -1,61 +1,22 @@
-window.onload = function() {
+window.onload = function(){
     document.addEventListener("dblclick",(e) => {
         e.preventDefault();
     },
     {
         passive: false
     }
-  );
+    );
+    const txt = document.getElementById('gay');
+    const btn = document.getElementById("btn-not");
 
-  const image = document.getElementById("img_fan");
-  const title = document.getElementById("title");
-  const sub = document.getElementById("subtitle");
-  const txt = document.getElementById("wish");
-  const tch = document.getElementById("tch");
-  const cld = document.getElementById("cld");
-  const num_bd = document.getElementById("date");
+    // txt.innerText = "test";
 
-  setTimeout(function () {
-    for (let index = 0; index < 101; index++) {
-      setTimeout(function () {
-        title.style.opacity = index / 100;
-      }, index * 10);
-    }
-  }, 1500);
-
-  setTimeout(function () {
-    var ind = 1;
-
-    for (let index = 0; index < 101; index++) {
-      setTimeout(function () {
-        sub.style.opacity = index / 100;
-      }, index * 10);
-    }
-    setTimeout(function () {
-      for (let index = 0; index < 101; index++) {
-        setTimeout(function () {
-          cld.className = "slide-top";
-          // num_bd.className = "slide-top";
-          num_bd.classList.add("slide-top");
-          txt.style.opacity = index / 100;
-          cld.style.opacity = index / 100;
-          num_bd.style.opacity = index / 100;
-        }, index * 10);
-      }
-      setTimeout(function () {
-        image.addEventListener("click", function () {
-          if (ind > 10) {
-            ind = 1; 
-          }
-          image.setAttribute("src", "Image/wan" + ind + ".jpg");
-          ind++;
-        });
-        for (let index = 0; index < 101; index++) {
-          setTimeout(function () {
-            tch.style.opacity = index / 100;
-          }, index * 10);
-        }
-      }, 800);
-    }, 1000);
-  }, 2000);
+    btn.addEventListener("click",function(){
+        btn.style.opacity = "0";
+        btn.style.visibility = "hidden";
+        txt.innerText = "You are lie!"
+        setTimeout(() => {
+            txt.innerText = "Your age is 20?"
+        }, 2000);
+    });
 }
