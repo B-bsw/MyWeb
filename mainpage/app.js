@@ -47,6 +47,14 @@ window.onload = function() {
           txt.style.opacity = index / 100;
           cld.style.opacity = index / 100;
           num_bd.style.opacity = index / 100;
+          cld.addEventListener('click',function(){
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('cld_pop').style.visibility = 'visible';
+          });
+          document.getElementById('overlay').onclick = function() {
+              document.getElementById('overlay').style.display = 'none';
+              document.getElementById('cld_pop').style.visibility = 'hidden';
+          };
         }, index * 10);
       }
       setTimeout(function () {
@@ -65,14 +73,4 @@ window.onload = function() {
       }, 800);
     }, 1000);
     }, 2000);
-
-    cld.addEventListener('click',function(){
-      document.getElementById('overlay').style.display = 'block';
-      document.getElementById('cld_pop').style.visibility = 'visible';
-    });
-
-    document.getElementById('overlay').onclick = function() {
-        document.getElementById('overlay').style.display = 'none';
-        document.getElementById('cld_pop').style.visibility = 'hidden';
-    };
 }
