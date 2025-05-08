@@ -38,9 +38,6 @@ html,body,div,h1,p,header {
 }
 .content{
     text-align: center;
-    /* padding: 2px; */
-    /* display: grid;
-    place-items: center; */
 }
 #title{
     font-size: 2em;
@@ -69,8 +66,8 @@ html,body,div,h1,p,header {
 }
 #img_fan{
     border-radius: 10px;
-    width: 200px;
-    height: 355.55px;
+    width: 150px;
+    height: 266.66px;
     /* float: right; */
     /* opacity: 0; */
 }
