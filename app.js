@@ -14,7 +14,7 @@ window.onload = function(){
     btn.addEventListener("click",function(){
         btn.style.opacity = "0";
         btn.style.visibility = "hidden";
-        txt.innerText = "You are lie!"
+        txt.innerText = "You are lie?"
         setTimeout(() => {
             txt.innerText = "Your age is 20?"
         }, 2000);
