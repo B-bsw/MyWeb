@@ -1,11 +1,9 @@
 window.onload = function(){
     document.addEventListener("dblclick",(e) => {
         e.preventDefault();
-    },
-    {
+    },{
         passive: false
-    }
-    );
+    });
     const txt = document.getElementById('gay');
     const btn = document.getElementById("btn-not");
 

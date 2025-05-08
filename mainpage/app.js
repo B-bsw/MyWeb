@@ -3,6 +3,7 @@ window.onload = function() {
     if (performance.navigation.type == 1) {
       window.location.replace('../index.html');
     }
+    
     document.addEventListener("dblclick",(e) => {
         e.preventDefault();
     },
@@ -18,6 +19,8 @@ window.onload = function() {
     const tch = document.getElementById("tch");
     const cld = document.getElementById("cld");
     const num_bd = document.getElementById("date");
+
+    const body = document.querySelector('body');
     
     setTimeout(function () {
     for (let index = 0; index < 101; index++) {
@@ -62,4 +65,14 @@ window.onload = function() {
       }, 800);
     }, 1000);
     }, 2000);
+
+    cld.addEventListener('click',function(){
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('cld_pop').style.visibility = 'visible';
+    });
+
+    document.getElementById('overlay').onclick = function() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('cld_pop').style.visibility = 'hidden';
+    };
 }
