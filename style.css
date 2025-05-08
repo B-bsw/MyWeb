@@ -58,7 +58,7 @@ html,body,div,h1,p,header {
     text-align:initial;
     font-family: "Itim";
     color: #333;
-    width: 170px;
+    width: 150px;
     position: relative;
     top: -20px;
     margin-right: 20px;
@@ -66,8 +66,8 @@ html,body,div,h1,p,header {
 }
 #img_fan{
     border-radius: 10px;
-    width: 150px; /*check*/
-    height: 266.66px;
+    width: 180px;
+    /* height: 266.66px; */
     /* float: right; */
     /* opacity: 0; */
 }
