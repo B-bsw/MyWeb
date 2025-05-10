@@ -14,6 +14,11 @@ html,body,div,h1,p,header {
     background-color: #f8db8b;
     padding: 5px;
 }
+.text{
+    font-size: 1em;
+    font-family: "Itim";
+    color: #333;
+}
 .grid {
     display: grid;
     /* grid-template-columns: 1fr; */
@@ -68,9 +73,9 @@ html,body,div,h1,p,header {
 }
 #wish{
     font-size: 1em;
-    text-align:initial;
     font-family: "Itim";
     color: #333;
+    text-align:initial;
     width: 150px;
     position: relative;
     top: -20px;
